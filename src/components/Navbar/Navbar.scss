@@ -1,0 +1,156 @@
+.app__navbar {
+    width: 100%;
+    height: 60px;
+    display: flex; // same line 左上 横列
+    justify-content: space-between;
+    align-items: center; //左中 The flexbox items are aligned at the center of Y.
+
+    padding: 1rem 2rem;  //上下1 左右2
+    background: rgba(214, 201, 201, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); //scss for old browsers
+    border:1px solid #c4c7ce;
+    border-top: 3px solid rgb(52,76,68);
+    position: fixed; //元素在屏幕滚动的时候位置不会改变
+    z-index: 2; // the order of overlapping HTML elements 值越高优先级越高
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content:flex-start;
+    align-items:center; 
+
+    img {
+        width: 85px;
+        height: 50px;
+
+        @media screen and (min-width: 2000px) {   //for extra large device
+            width: 170px;
+            height: 100px;
+        }
+    }
+}
+
+.app__navbar-links{
+    flex: 1; //flex: 1; 实现了三个不同内容的 div 平分空间,
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none; //remove bullet points
+    padding: 3rem;
+
+    li {
+        margin:0 1rem; //左右 1rem
+        cursor: pointer; //The mouse pointer becomes the shape of a hand
+        flex-direction: column;
+
+        a {
+            height: 50px;
+            padding: 15px 10px;
+            border-radius: 5%;
+
+            color:var(--gray-color);
+            text-decoration: none;
+            flex-direction: column;
+
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color:  var(--secondary-color);
+                color:  var(--white-color);
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px){
+         display: none;
+    }
+}
+
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 5%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    
+    &:hover {
+        background-color:  rgb(124, 129, 128);
+    }
+
+    svg {   //menu button
+        width:70%;
+        height: 70%;
+        color: var(--white-color);        
+    }
+
+    div {   //motion.div
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
+        padding: 1rem;
+        width: 60%;    //修改menu弹窗长度一定要修改 <motion.div --- whileInView={{ x: [150, 0] }}
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+         
+        background: url('../../assets/bgWhite.png');
+        background-color: var(--white-color);
+        background-size: cover;
+        background-repeat: repeat;
+        box-shadow: 0 0 20px rgba(168,168, 168, 0.15);
+
+         svg {    //X button
+            width: 35px;
+            height: 35px;
+            color: var(--secondary-color);
+            margin: 0.5rem 1rem;
+
+            &:hover {
+                color:  var(--primary-color);
+            }   
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            li{
+                margin: 1rem;
+                a{
+                    color:var(--gray-color);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
