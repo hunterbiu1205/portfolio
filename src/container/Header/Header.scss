@@ -173,24 +173,19 @@
       float: left;
 
       .get_resume{
+        color:var( --lightGray-color);
         border-radius: 5px 5px;
         margin-top: 2rem;
         margin-right: 1rem;
         background-color:rgb(52,76,68); /* Green */
         border: none;
-        padding: 15px 32px;  
-        font-size: 16px;
+        padding: 15px 30px;  
+        font-size: 15px;
 
         &:hover {
           box-shadow: 5px 5px 10px 1px #255240;
         }
         
-        a{
-          color: white;
-          text-align: center;
-          text-decoration: none;
-        }
-
         @media screen and (max-width: 1200px) {
           width: 100%;
           // margin-top: 1rem;

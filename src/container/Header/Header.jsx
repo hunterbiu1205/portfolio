@@ -62,13 +62,13 @@ const Header = () => {
                     </div>
 
                     <div className="info">
-                        <button className="get_resume one">
-                            <a href={require("../../assets/react.png")} download="myFile">GET MY RESUME</a>
-                        </button>
 
-                        <button className="get_resume one">
-                            <a href="mailto:hunterbiu1205@gmail.com" >hunterbiu1205@gmail.com</a>
-                        </button>
+                        <a href={require("../../assets/react.png")} download="GFG">
+                            <button className="get_resume one" type="button">GET MY RESUME</button>
+                        </a>
+                        <a href="mailto:hunterbiu1205@gmail.com">
+                            <button className="get_resume one" type="button">hunterbiu1205@gmail.com</button>
+                        </a>
 
                     </div>
 
