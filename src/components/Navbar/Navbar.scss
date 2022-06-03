@@ -120,7 +120,10 @@
                 background: var(--secondary-color);
                 box-shadow: 1px 1px var(--secondary-color);
                 border-radius: 5%;
-            }   
+            } 
+            @media screen and (max-width:450px) {
+                margin: 0rem 0rem;
+            }  
         }
 
         ul {
@@ -135,6 +138,10 @@
             padding: 0rem 2rem;
 
             list-style: none;
+
+            @media screen and (max-width:450px) {
+                padding: 2rem 0rem;
+            }
 
             li{
                 margin: 1rem;
