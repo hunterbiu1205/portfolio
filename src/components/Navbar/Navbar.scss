@@ -1,28 +1,27 @@
 .app__navbar {
-    width: 100%;
-    height: 60px;
     display: flex; // same line 左上 横列
     justify-content: space-between;
     align-items: center; //左中 The flexbox items are aligned at the center of Y.
-
-    padding: 1rem 2rem;  //上下1 左右2
-    background: rgba(214, 201, 201, 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); //scss for old browsers
-    border:1px solid #c4c7ce;
-    border-top: 3px solid rgb(52,76,68);
     position: fixed; //元素在屏幕滚动的时候位置不会改变
     z-index: 2; // the order of overlapping HTML elements 值越高优先级越高
+
+    width: 100%;
+    height: 60px;
+    padding: 1rem 2rem;  //上下1 左右2
+
+    background: rgba(214, 201, 201, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); //scss for old browsers
+    border:1px solid #c4c7ce;
+    border-top: 3px solid rgb(52,76,68);
 }
 
 .app__navbar-logo {
-    display: flex;
-    justify-content:flex-start;
-    align-items:center; 
 
     img {
         width: 85px;
         height: 50px;
+        margin-top: 0.3rem;
 
         @media screen and (min-width: 2000px) {   //for extra large device
             width: 170px;
@@ -33,29 +32,27 @@
 
 .app__navbar-links{
     flex: 1; //flex: 1; 实现了三个不同内容的 div 平分空间,
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    display: flex; // same line 左上 横列
+    justify-content: right; //左右
+    align-items: center;  //上下
+
+    padding: 2rem;
     list-style: none; //remove bullet points
-    padding: 3rem;
 
     li {
         margin:0 1rem; //左右 1rem
         cursor: pointer; //The mouse pointer becomes the shape of a hand
-        flex-direction: column;
 
         a {
             height: 50px;
             padding: 15px 10px;
-            border-radius: 5%;
-
-            color:var(--gray-color);
-            text-decoration: none;
-            flex-direction: column;
-
-            text-transform: uppercase;
             font-weight: 500;
-            transition: all 0.3s ease-in-out;
+
+            color:var(--black-color);
+            text-transform: uppercase;
+            text-decoration: none;  //a tag no underline 
+            border-radius: 5%;
+            transition: all 0.3s ease-in-out; //hover time
 
             &:hover {
                 background-color:  var(--secondary-color);
@@ -64,30 +61,31 @@
         }
     }
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px){  //如果屏幕缩小至900px, 则隐藏nav-links  手机一般400
          display: none;
     }
 }
 
 .app__navbar-menu {
-    width: 35px;
-    height: 35px;
-    border-radius: 5%;
-    position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; //相对定位，可以使用top/right/bottom/left属性改变它的位置
+
+    width: 35px;
+    height: 35px;
+    
+    border-radius: 5%;
     background-color: var(--secondary-color);
     
     &:hover {
         background-color:  rgb(124, 129, 128);
     }
 
-    svg {   //menu button
+    svg {   //menu button  HiMenuAlt4
         width:70%;
         height: 70%;
-        color: var(--white-color);        
+        color: var(--primary-color);        
     }
 
     div {   //motion.div
@@ -95,45 +93,48 @@
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 5;
-
-        padding: 1rem;
-        width: 60%;    //修改menu弹窗长度一定要修改 <motion.div --- whileInView={{ x: [150, 0] }}
-        height: 100vh;
-
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
+        z-index: 5; //最高优先级
+
+        width: 50%;    //修改menu弹窗长度一定要修改 <motion.div --- whileInView={{ x: [150, 0] }}
+        height: 100vh;
+        padding: 2rem;
          
         background: url('../../assets/bgWhite.png');
         background-color: var(--white-color);
         background-size: cover;
         background-repeat: repeat;
-        box-shadow: 0 0 20px rgba(168,168, 168, 0.15);
+        box-shadow: 0px 0px 10px var(--secondary-color);
 
          svg {    //X button
             width: 35px;
             height: 35px;
-            color: var(--secondary-color);
             margin: 0.5rem 1rem;
+            color: var(--gray-color);
 
             &:hover {
-                color:  var(--primary-color);
+                color: var(--white-color);
+                background: var(--secondary-color);
+                box-shadow: 1px 1px var(--secondary-color);
+                border-radius: 5%;
             }   
         }
 
         ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            display: flex;
+            justify-content: flex-start; //左右
+            align-items: flex-start; //上下
+            flex-direction: column;
+
             height: 100%;
             width: 100%;
+            margin: 0;
+            padding: 0rem 2rem;
 
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
+            list-style: none;
 
             li{
                 margin: 1rem;
@@ -143,10 +144,11 @@
                     font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: 500;
-                    transition: all 0.2s ease-in-out;
+                    transition: all 0.1s ease-in-out;
 
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--secondary-color);
+                        text-shadow: 1px 1px var(--secondary-color);
                     }
                 }
             }

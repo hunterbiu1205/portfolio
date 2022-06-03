@@ -1,15 +1,9 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
-import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
-import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
-import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
-import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
@@ -25,30 +19,26 @@ import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import HD1 from '../assets/HD1.png';
+import HD2 from '../assets/HD2.png';
 
-import adidas from '../assets/adidas.png';
-import amazon from '../assets/amazon.png';
-import asus from '../assets/asus.png';
-import bolt from '../assets/bolt.png';
-import nb from '../assets/nb.png';
-import skype from '../assets/skype.png';
-import spotify from '../assets/spotify.png';
-import HD from '../assets/HD.png';
+import cg1 from '../assets/cg1.JPG';
+import cg2 from '../assets/cg2.JPG';
+import cg3 from '../assets/cg3.JPG';
+import cg4 from '../assets/cg4.jpg';
+
+import graduation1 from '../assets/graduation1.jpg';
+import graduation2 from '../assets/graduation2.JPG';
+import graduation3 from '../assets/graduation3.JPG';
+import graduation4 from '../assets/graduation4.JPG';
 
 export default {
     email,
     mobile,
-    api,
     cpp,
     css,
-    figma,
-    flutter,
-    git,
-    graphql,
     html,
     javascript,
-    mu5,
     node,
     python,
     react,
@@ -62,13 +52,14 @@ export default {
     about04,
     profile,
     circle,
-    logo,
-    adidas,
-    amazon,
-    asus,
-    bolt,
-    nb,
-    skype,
-    spotify,
-    HD,
+    HD1,
+    HD2,
+    cg1,
+    cg2,
+    cg3,
+    cg4,
+    graduation1,
+    graduation2,
+    graduation3,
+    graduation4,
 };

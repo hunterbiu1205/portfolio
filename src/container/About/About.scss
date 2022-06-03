@@ -3,46 +3,108 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+  
 
-    // @media screen and (max-width: 1200px){
-    //     h2{
-    //         font-size: 1.25rem;
-    //     }
-    //     width: 95%;
-    // }
+    @media screen and (max-width: 1200px){
+        h1{
+            font-size: 2rem;
+        }
+        width: 95%;
+    }
+
+    @media screen and (max-width: 450px){
+      h1{
+          font-size: 1.6rem;
+      }
+  }
 }
 
 .app__profiles{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; //让弹性盒元素在必要的时候拆行：
     margin-top: 2rem;
-}
 
-.app__profile-item {
-    width: 190px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 2rem;
+  .app__profile-item {
+      width: 190px;
+      margin: 2rem;
 
-    img { 
-        width: 100%;
-        height: 170px;
-        border-radius: 15px;
-        object-fit: cover;
+      img { 
+          width: 100%;
+          height: 170px;
+          border-radius: 15px;
+          object-fit: cover;
+          
+      }
+
+      @media screen and (max-width: 1200px) {
+          width: 100px;
+          margin: 1rem 1.5rem;
+      
+          img {
+            height: 100px;
+            width: 100px;
+          }
+
+          h2 {
+            font-size: small;
+          }
+       }
+    }
+  }
+
+.about_me{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Avenir', cursive;
+
+    p {
+      padding: 1rem 2rem;
+      color: var(--lightGray-color);
     }
 
-    @media screen and (max-width: 1200px) {
-        width: 270px;
-        margin: 0.5rem 6rem;
-    
-        img {
-          height: 120px;
-          width: 170px;
+    .cg_image{
+
+      img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        margin: 2rem; 
+        border-radius: 5px; 
+   
+        
+        @media screen and (max-width: 1200px) {
+          margin-right: 1rem;  
+          width: 150px;
+          height: 190px;
+     
+        }
+
+        @media screen and (max-width: 450px) {
+          margin: 0rem 0.1rem 0rem 0.2rem;  
+          width: 130px;
+          height: 140px;
         }
       }
+
+      @media screen and (max-width: 450px) {
+        margin-left: 20px;
+      }
   
+    }
+
+    @media screen and (max-width: 450px) {
+      padding: 0rem 0rem;
+      p {
+        padding: 1rem 0.4rem;
+        color: var(--lightGray-color);
+      }
+    }
 }
+
+
+ 

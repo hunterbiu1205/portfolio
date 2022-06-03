@@ -8,17 +8,17 @@ import { images } from '../../constants'
 
 const Navbar = () => {
 
-    // const items = ['home', 'about', 'work', 'skills', 'contact']
+    const items = ['home', 'about', 'work', 'skills', 'contact']
     const [toggle, setToggle] = useState(false)
 
     return (
         <nav className="app__navbar">
             <div className="app__navbar-logo">
-                <img src={images.HD} alt='logo' />
+                <img src={images.HD1} alt='logo' />
             </div>
 
             <ul className='app__navbar-links'>
-                {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                {items.map((item) => (
                     <li className="app__flex p-text" key={`link-${item}`}>
                         <a href={`#${item}`}>{item}</a>
                     </li>
@@ -32,13 +32,14 @@ const Navbar = () => {
                 {toggle && (
                     <motion.div
                         whileInView={{ x: [150, 0] }}
-                        transition={{ duration: 0.85, ease: 'easeOut' }}
+                        transition={{ duration: 0.5, ease: 'easeOut' }}
                     >
                         <HiX onClick={() => setToggle(false)} />
+                        {/* close menu once click*/}
                         <ul>
                             {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                                 <li className="p-text" key={item} >
-                                    {/* close menu once click*/}
+                                    {/* close menu and change to item once click*/}
                                     <a href={`#${item}`} onClick={() => setToggle(false)} >
                                         {item}
                                     </a>

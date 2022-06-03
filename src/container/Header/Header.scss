@@ -1,7 +1,5 @@
 #home {
     position: relative;
-    // background: url("../../assets/bgIMG.png");
-
     background-color:rgb(217,223,216);
     background-size: cover;
     background-position: center;
@@ -15,7 +13,7 @@
         display: none;
       }
     }
-  }
+}
   
   .app__header {
     flex: 1;  //三个div平分
@@ -23,9 +21,9 @@
     height: 100%;
     flex-direction: row; //以row排列
   
-    padding: 6rem 0rem 0rem;
+    padding: 6rem 0rem 0rem; //上  左右  下
   
-    @media screen and (min-width: 2000px) {
+    @media screen and (min-width: 2000px) { //缩小到2000 for extra large device
       padding-top: 8rem;
     }
   
@@ -33,210 +31,183 @@
       flex-direction: column;
     }
   
-    @media screen and (max-width: 450px) {   //mobile view
-      padding: 6.5rem 2rem 0rem 0rem;
+    @media screen and (max-width: 450px) {   //mobile view usually 400px
+      padding: 6.5rem 2rem 0rem 0rem;  
     }
   }
   
   .app__header-info {
-    flex: 1;
+    flex: 1; //info 上下三个平分
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+   
     height: 100%;
+    margin: 0 1rem;  //上下 左右
   
-    margin: 0 1rem;  //上 右 下 左
-  
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 450px) {  //缩小到450
       width: 100%;
       margin: -1rem 0rem 0rem 2rem;
     }
   }
-  
-  .app__header-badge {
-    width: 100%;
-    // height: 150px;
+    
+  .header__title {    
     display: flex;
     justify-content: flex-end;
     align-items: flex-start; //靠右开始
     flex-direction: column; //两个div 上下排列
-  
-    .header-name{    
-        padding: 1rem 1rem;
-        border-radius: 15px;
-        flex-direction: row;
-        width: auto;
-        height: auto;
-        font-family: 'Avenir', cursive;
-        // color: var(--secondary-color);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-        .hname span {
-            display: table-cell;
-            margin:0;
-            padding: 0;
-            animation: animate 3s linear infinite;
-            font-size:8vmin
-        }
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-        .hintro span {
-          display: table-cell;
-          margin:0;
-          padding: 0;
-          animation: animate 5s linear infinite;
-          font-size:12vmin
-        }
-
-        h1 span:nth-child(1){
-          animation-delay: 0s;
-        }
-        h1 span:nth-child(2){
-          animation-delay: 0.1s;
-        }
-        h1 span:nth-child(3){
-          animation-delay: 0.2s;
-        }
-        h1 span:nth-child(4){
-          animation-delay: 0.3s;
-        }
-        h1 span:nth-child(5){
-          animation-delay: 0.4s;
-        }
-        h1 span:nth-child(6){
-          animation-delay: 0.5s;
-        }
-        h1 span:nth-child(7){
-          animation-delay: 0.6s;
-        }
-        h1 span:nth-child(8){
-          animation-delay: 0.7s;
-        }
-        h1 span:nth-child(9){
-          animation-delay: 0.8s;
-        }
-        h1 span:nth-child(10){
-          animation-delay: 0.9s;
-        }
-        h1 span:nth-child(11){
-          animation-delay: 1s;
-        }
-
-        @keyframes animate {
-          0%,100%
-          {
-            color:rgb(209, 23, 63); 
-            text-shadow: 0 0 10px #8FBC8F,
-                        0 0 20px #8FBC8F,
-                        0 0 40px #8FBC8F,
-                        0 0 80px #8FBC8F,
-                        0 0 120px #8FBC8F,
-          }
-          5%,95%
-          {
-            color: var(--secondary-color);;
-            filter: blur(0px);
-            text-shadow: 0 0 10px none;
-          }
-        }
-        @media screen and (max-width: 1200px) {   //mobile view 100%
-          width: 100%;
-        }
+    .title__name span {
+      display: table-cell;
+      animation: animate 3s linear infinite;
+      font-size:8vmin;
+      font-family: 'Avenir', cursive;
     }
 
-    .header-intro {
+    .title__job span {
+      display: table-cell;
+      animation: animate 5s linear infinite;
+      font-size:12vmin
+    }
+
+    h1 span:nth-child(1) {
+      animation-delay: 0s;
+    }
+    h1 span:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    h1 span:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    h1 span:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+    h1 span:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+    h1 span:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+    h1 span:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+    h1 span:nth-child(8) {
+      animation-delay: 0.7s;
+    }
+    h1 span:nth-child(9) {
+      animation-delay: 0.8s;
+    }
+    h1 span:nth-child(10) {
+      animation-delay: 0.9s;
+    }
+    h1 span:nth-child(11) {
+      animation-delay: 1s;
+    }
+
+    @keyframes animate {
+      0%,100%
+      {
+        color:rgb(209, 23, 63); 
+        text-shadow: 0 0 10px #8FBC8F,
+                     0 0 20px #8FBC8F,
+                     0 0 40px #8FBC8F,
+                     0 0 80px #8FBC8F,
+                     0 0 120px #8FBC8F,
+      }
+      5%,95%
+      {
+        color: var(--secondary-color);;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+      }
+    }
+    @media screen and (max-width: 1200px) {   //缩小至1200 全屏大概1440
+      width: 100%;
+
+      // h1{
+      //   font-size: 10px;
+      // }
+    }
+  }
+
+    .header__sum {
+      width: 558px;
+      margin-top: 2rem;
       padding: 1rem 1rem;
       border-radius: 15px;
-      flex-direction: row;
-      width: 550px;
-
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      
-      flex-direction: column;
-      margin-top: 2rem;
-      font-family: 'Avenir', cursive;
 
       p {
-        width: 100%;
+        font-size: 18px;
+        font-family: 'Avenir', cursive;
         text-align: left;
         color: var(--secondary-color);
       }
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1200px) { //缩小至1200 全屏大概1440
         width: 100%;
-        // margin-top: 1rem;
+        margin-bottom: 1rem;
       }
       
     }  
 
-    .info{
-      float: left;
+    .header__contact{
 
-      .get_resume{
-        color:var( --lightGray-color);
-        border-radius: 5px 5px;
-        margin-top: 2rem;
-        margin-right: 1rem;
-        background-color:rgb(52,76,68); /* Green */
-        border: none;
+      .button{
+        margin: 2rem 1rem 0rem 0rem;
         padding: 15px 30px;  
         font-size: 15px;
+
+        color: var(--lightGray-color);
+        background-color:rgb(52,76,68); /* Green */
+        border: none;
+        border-radius: 5px;
 
         &:hover {
           box-shadow: 5px 5px 10px 1px #255240;
         }
-        
-        @media screen and (max-width: 1200px) {
-          width: 100%;
-          // margin-top: 1rem;
+
+        @media screen and (max-width: 1200px) {  //窗口缩放小到900 column排列
+          width:100%;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
         }
       }     
     }
    
-
-    @media screen and (max-width: 1200px) {
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-  }
-  
 ///------------------------------------------------------------------------------
 
   .app__header-img {
-    // margin-right: 5rem;
-    flex: 1;
-    height: 100%;
-  
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
   
     img {
-      padding-right: 5rem;
-      width: 80%;
-      object-fit: contain;  //被替换的内容将被缩放，以在填充元素的内容框时保持其宽高比
+      width: 70%;
+      margin-right: 5rem;
+      object-fit: contain;  //内容将被缩放，随着窗口缩小
       z-index: 1;
-
-      @media screen and (max-width: 1200px) {
-         margin-right: -19px;  
-      }
     }
   
     .overlay_circle {
       position: absolute;
-      margin-left: 7.5rem;
-      // background-color: rgb(238, 20, 20);
-      left: 0;
+      left: 1;
       right: 0;
       bottom: 0;
       z-index: 0;  //cicle behind protflio
       width: 75%;
       height: 85%;
-
-      @media screen and (max-width: 1200px) {
-       margin-left: 90px;
-  
-      }
     }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin-left: 5rem;
+     }
+
   }

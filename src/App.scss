@@ -62,7 +62,7 @@
   // padding-top: 2rem;
 
   span {
-    color: var( --lightGray-color);
+    color: var( --secondary-color);
   }
 
   @media screen and (min-width: 2000px) {
@@ -83,7 +83,7 @@
   // padding-top: 2rem;
 
   span {
-    color: var( --secondary-color);
+    color: var( --lightGray-color);
   }
 
   @media screen and (min-width: 2000px) {
@@ -124,6 +124,21 @@
   font-size: 1rem;
   font-weight: 800;
   color: var(--lightGray-color);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+
+.bold-text2 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--gray-color);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
