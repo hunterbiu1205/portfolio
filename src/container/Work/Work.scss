@@ -112,6 +112,14 @@
     @media screen and (min-width: 2000px) {
       height: 350px;
     }
+
+    @media screen and (max-width: 450px) {
+      img {
+        width: 100%;
+        height: 60%;
+      }
+    }
+
   }
   
   .app__work-hover {
