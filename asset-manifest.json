@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.05c11c9d.css",
+    "main.css": "/static/css/main.a12fc8af.css",
     "main.js": "/static/js/main.b9e61d25.js",
     "static/media/graduation3.JPG": "/static/media/graduation3.5c569a28e9a001630c5b.JPG",
     "static/media/graduation4.JPG": "/static/media/graduation4.cb7a2c42e8d07463a0f3.JPG",
@@ -25,11 +25,11 @@
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.05c11c9d.css.map": "/static/css/main.05c11c9d.css.map",
+    "main.a12fc8af.css.map": "/static/css/main.a12fc8af.css.map",
     "main.b9e61d25.js.map": "/static/js/main.b9e61d25.js.map"
   },
   "entrypoints": [
-    "static/css/main.05c11c9d.css",
+    "static/css/main.a12fc8af.css",
     "static/js/main.b9e61d25.js"
   ]
 }
