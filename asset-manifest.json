@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.85692824.css",
-    "main.js": "/static/js/main.b9e61d25.js",
+    "main.css": "/static/css/main.bfd211cc.css",
+    "main.js": "/static/js/main.90798ab0.js",
     "static/media/graduation3.JPG": "/static/media/graduation3.5c569a28e9a001630c5b.JPG",
     "static/media/graduation4.JPG": "/static/media/graduation4.cb7a2c42e8d07463a0f3.JPG",
     "static/media/graduation2.JPG": "/static/media/graduation2.d410eced07169bcd9964.JPG",
+    "static/media/background.jpg": "/static/media/background.7d3be4bff4fc9241a79a.jpg",
     "static/media/cg1.JPG": "/static/media/cg1.0fcc84ac1f6ca7c61d7e.JPG",
     "static/media/cg2.JPG": "/static/media/cg2.df9670a18eb5abc80a01.JPG",
     "static/media/cg3.JPG": "/static/media/cg3.d7ad629ae3d529d7963d.JPG",
@@ -16,6 +17,7 @@
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
     "static/media/graduation1.jpg": "/static/media/graduation1.091de304930ce220c7b8.jpg",
     "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
+    "static/media/Huatao_Dong.pdf": "/static/media/Huatao_Dong.17f1edc52eda16c30c36.pdf",
     "static/media/HD2.png": "/static/media/HD2.ff8157340a0b94aac9d4.png",
     "static/media/HD1.png": "/static/media/HD1.bf900240ed22a24e3265.png",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
@@ -25,11 +27,11 @@
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.85692824.css.map": "/static/css/main.85692824.css.map",
-    "main.b9e61d25.js.map": "/static/js/main.b9e61d25.js.map"
+    "main.bfd211cc.css.map": "/static/css/main.bfd211cc.css.map",
+    "main.90798ab0.js.map": "/static/js/main.90798ab0.js.map"
   },
   "entrypoints": [
-    "static/css/main.85692824.css",
-    "static/js/main.b9e61d25.js"
+    "static/css/main.bfd211cc.css",
+    "static/js/main.90798ab0.js"
   ]
 }
