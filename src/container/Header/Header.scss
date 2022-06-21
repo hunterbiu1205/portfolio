@@ -144,17 +144,17 @@
   }
 
   @media screen and (max-width:900px) {
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
     span {
       font-size:7vmin;
     }
   }
 
-  @media screen and (max-width:450px) {
-    margin-bottom: 12rem;
-    span {
-      font-size:7vmin;
-    }
-  }
+  // @media screen and (max-width:450px) {
+  //   // margin-bottom: 12rem;
+  //   span {
+  //     font-size:7vmin;
+  //   }
+  // }
 
 }  
