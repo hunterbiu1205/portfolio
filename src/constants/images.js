@@ -32,6 +32,9 @@ import graduation2 from '../assets/graduation2.JPG';
 import graduation3 from '../assets/graduation3.JPG';
 import graduation4 from '../assets/graduation4.JPG';
 
+import background from '../assets/background.jpg';
+import huataodong from '../assets/Huatao_Dong.pdf';
+
 export default {
     email,
     mobile,
@@ -62,4 +65,6 @@ export default {
     graduation2,
     graduation3,
     graduation4,
+    background,
+    huataodong,
 };

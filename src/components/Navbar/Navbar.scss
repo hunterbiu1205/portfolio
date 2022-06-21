@@ -8,11 +8,6 @@
     width: 100%;
     height: 60px;
     padding: 1rem 2rem;  //上下1 左右2
-
-    background: rgba(214, 201, 201, 0.25);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); //scss for old browsers
-    border:1px solid #c4c7ce;
     border-top: 3px solid rgb(52,76,68);
 }
 
@@ -48,7 +43,7 @@
             padding: 15px 10px;
             font-weight: 500;
 
-            color:var(--black-color);
+            color:var(--white-color);
             text-transform: uppercase;
             text-decoration: none;  //a tag no underline 
             border-radius: 5%;
@@ -56,7 +51,7 @@
 
             &:hover {
                 background-color:  var(--secondary-color);
-                color:  var(--white-color);
+                text-shadow: 4px 4px 4px #000000;
             }
         }
     }

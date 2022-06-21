@@ -38,7 +38,7 @@ const Work = () => {
 
     return (
         <>
-            <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+            <h2 className="head-text2">My Creative <span>Portfolio</span> Section</h2>
 
             <div className="app__work-filter">
                 {['Java', 'UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -107,6 +107,11 @@ const Work = () => {
                     </div>
                 ))}
             </motion.div>
+            <br />
+            <br />
+            <h1 className="head-text2">
+                " I Know That <span>Good Development</span> <br />means <span>Good Business</span> "
+            </h1>
         </>
     );
 };

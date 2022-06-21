@@ -6,6 +6,7 @@
 
 .app__whitebg {
   background-color: rgb(52,76,68);
+  border: 2px solid white;
 }
 
 .app__primarybg {
@@ -57,12 +58,12 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--primary-color);
   text-transform: capitalize;
-  // padding-top: 2rem;
+  padding-top: 2rem;
 
   span {
-    color: var( --secondary-color);
+    color: var( --black-color);
   }
 
   @media screen and (min-width: 2000px) {
@@ -80,10 +81,10 @@
   text-align: center;
   color: var(--black-color);
   text-transform: capitalize;
-  // padding-top: 2rem;
+  padding-top: 2rem;
 
   span {
-    color: var( --lightGray-color);
+    color: var( --secondary-color);
   }
 
   @media screen and (min-width: 2000px) {
