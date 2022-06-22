@@ -94,7 +94,7 @@ const Work = () => {
                         </div>
 
                         <div className="app__work-content app__flex">
-                            <h4 className="bold-text">{work.title}</h4>
+                            <h5 >{work.title}</h5>
                             <div className="work_details">
                                 <p className="work_details p-text" style={{ marginTop: 10 }}>{work.description}</p>
                             </div>

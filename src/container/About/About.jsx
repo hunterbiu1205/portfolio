@@ -54,7 +54,7 @@ const About = () => {
                                 <button className="button" type="button">GET MY RESUME</button>
                             </a>
                             <a href="mailto:hunterbiu1205@gmail.com">
-                                <button className="button" type="button">hunterbiu1205@gmail.com</button>
+                                <button className="button" type="button">EMAIL ME</button>
                             </a>
                         </div>
 
@@ -90,7 +90,7 @@ const About = () => {
                         <img src={images.cg4} />
                     </div> */}
                     <p>
-                        In 2018, I made the most important choice of my life and came to Australia to become a student at the University of Adelaide. Computer science is the study of computation, automation, and information. It is generally considered an academic field of study with a wide range of research, applications and employment directions. As the main technology of the third industrial revolution, it is still one of the core disciplines. As the main technology of the third industrial revolution, it is still one of the core disciplines and has a bright future development, which is why I decided to study this major. Web development is an exciting career because it's always evolving and constantly changing. It has the opportunity for people to grow and interact with new tools and new skills. Maybe it's because I love design and the pursuit of perfection, I really enjoy working in web development and I want to turn that interest into my profession. As a junior developer, I want to enter this industry through website development to continuously enrich my experience and skills to participate in more development projects in the future.
+                        In 2018, I made the most important choice of my life and came to Australia to become a student at the University of Adelaide. Computer science is the study of computation, automation, and information. It is generally considered an academic field of study with a wide range of research, applications and employment directions. As the main technology of the third industrial revolution, it is still one of the core disciplines and has a bright future development, which is why I decided to study this major. Web development is an exciting career because it's always evolving and constantly changing. It has the opportunity for people to grow and interact with new tools and new skills. Maybe it's because I love design and the pursuit of perfection, I really enjoy working in web development and I want to turn that interest into my profession. As a junior developer, I want to enter this industry through website development to continuously enrich my experience and skills to participate in more development projects in the future.
                     </p>
 
                     <div className="cg_image">

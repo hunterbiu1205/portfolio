@@ -58,8 +58,11 @@
     align-items: center;
   
     .app__work-item {
+      display: flex;
+      justify-content:flex-start;
+      align-items: flex-start;
       flex-direction: column;
-      height: 350px;
+      height: 370px;
       width: 270px;
      
       margin: 2rem;
@@ -98,7 +101,7 @@
        @media screen and (max-width: 450px) {
         width: 150px;
         height: 190px;
-        margin: 0.5rem;
+        margin: 0.8rem;
         margin-top: 1.5rem;
         padding: 0.5rem;
       }
@@ -124,9 +127,10 @@
     @media screen and (max-width: 450px) {
       img {
         width: 100%;
-        height: 75%;
-        margin-bottom: 1.5rem;
-        object-fit: cover;
+        height: 140px;
+        margin-bottom: 1.3rem;
+        // object-fit: cover;
+      
       }
     }
 
@@ -175,9 +179,11 @@
     width: 100%;
     padding: 0.5rem;
     
-    h4 {
+    h5 {
       margin-top: 1rem;
       line-height: 1.5;
+      font-size: 15px;
+      color: var(--primary-color);
       
       @media screen and (min-width: 2000px) {
         margin-top: 3rem;

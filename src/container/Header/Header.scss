@@ -24,15 +24,13 @@
   background-position: center;
   background-size: cover;
   
-  background-color:red;
-
   @media screen and (max-width:450px) {
     background-position:-18rem;
   }
 }
 
 .header__intro {  
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
 
   span {
     display: table-cell;
