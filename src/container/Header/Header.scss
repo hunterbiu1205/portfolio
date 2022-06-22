@@ -1,12 +1,12 @@
 
 // #home {
-//   .app__wrapper {
-//     padding: 0;
+//   // .app__wrapper {
+//   //   padding: 0;
 
-//     .copyright {
-//       display: none;
-//     }
-//   }
+//   //   .copyright {
+//   //     display: none;
+//   //   }
+//   // }
 // }
 
 .app__header{
@@ -27,7 +27,7 @@
   background-color:red;
 
   @media screen and (max-width:450px) {
-    background-position:-18rem;
+    background-position:-16rem;
   }
 }
 

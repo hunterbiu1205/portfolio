@@ -22,7 +22,7 @@
 .app__about_intro
 {
   display: flex;
-  margin-top: 800px;
+  // margin-top: 800px;
   margin-bottom: 8rem;
   @media screen and (max-width: 1100px) {  //窗口缩放小到1100 column排列
     flex-direction: column;
