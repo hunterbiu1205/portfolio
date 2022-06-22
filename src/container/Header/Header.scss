@@ -1,13 +1,13 @@
 
-#home {
-  .app__wrapper {
-    padding: 0;
+// #home {
+//   .app__wrapper {
+//     padding: 0;
 
-    .copyright {
-      display: none;
-    }
-  }
-}
+//     .copyright {
+//       display: none;
+//     }
+//   }
+// }
 
 .app__header{
   position:absolute;
@@ -20,20 +20,20 @@
   justify-content: center;
   align-items: flex-end;
 
-  // background: url('../../assets/background.jpg');
+  background: url('../../assets/background.jpg');
   background-position: center;
   background-size: cover;
   
   background-color:red;
 
-  // @media screen and (max-width:450px) {
-  //   background-position:-18rem;
-  // }
+  @media screen and (max-width:450px) {
+    background-position:-18rem;
+  }
 }
 
 
 .header__intro {  
-  // margin-bottom: 4rem;
+  margin-bottom: 4rem;
 
   span {
     display: table-cell;
@@ -153,11 +153,11 @@
     }
   }
 
-  // @media screen and (max-width:450px) {
-  //   // margin-bottom: 12rem;
-  //   span {
-  //     font-size:7vmin;
-  //   }
-  // }
+  @media screen and (max-width:450px) {
+    // margin-bottom: 12rem;
+    span {
+      font-size:7vmin;
+    }
+  }
 
 }  
