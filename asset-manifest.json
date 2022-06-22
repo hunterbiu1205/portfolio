@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7119503.css",
-    "main.js": "/static/js/main.cb34dd22.js",
+    "main.css": "/static/css/main.bc0b1bf3.css",
+    "main.js": "/static/js/main.07a0328e.js",
     "static/media/graduation3.JPG": "/static/media/graduation3.5c569a28e9a001630c5b.JPG",
     "static/media/graduation4.JPG": "/static/media/graduation4.cb7a2c42e8d07463a0f3.JPG",
     "static/media/graduation2.JPG": "/static/media/graduation2.d410eced07169bcd9964.JPG",
@@ -27,11 +27,11 @@
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.e7119503.css.map": "/static/css/main.e7119503.css.map",
-    "main.cb34dd22.js.map": "/static/js/main.cb34dd22.js.map"
+    "main.bc0b1bf3.css.map": "/static/css/main.bc0b1bf3.css.map",
+    "main.07a0328e.js.map": "/static/js/main.07a0328e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7119503.css",
-    "static/js/main.cb34dd22.js"
+    "static/css/main.bc0b1bf3.css",
+    "static/js/main.07a0328e.js"
   ]
 }
