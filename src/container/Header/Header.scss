@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: flex-end;
 
-  background: url('../../assets/background.jpg');
+//   background: url('../../assets/background.jpg');
   background-position: center;
   background-size: cover;
   
@@ -32,7 +32,7 @@
 }
 
 .header__intro {  
-  // margin-bottom: 4rem;
+  margin-bottom: 4rem;
 
   span {
     display: table-cell;
