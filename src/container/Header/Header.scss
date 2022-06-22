@@ -1,22 +1,18 @@
-
-
-  #home {
-    position: relative;
-    background: url("../../assets/bgIMG.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+#home {
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   
-    // disable the default padding styles
-    .app__wrapper {
-      padding: 0;
+  .app__wrapper {
+    padding: 0;
   
-      .copyright {
-        display: none;
-      }
+    .copyright {
+      display: none;
     }
   }
-
+}
 
 .app__header{
   position:absolute;
@@ -32,14 +28,11 @@
   background: url('../../assets/background.jpg');
   background-position: center;
   background-size: cover;
-  
-  background-color:red;
 
   @media screen and (max-width:450px) {
     background-position:-14rem;
   }
 }
-
 
 .header__intro {  
   margin-bottom: 4rem;
@@ -155,17 +148,10 @@
     }
   }
 
-  @media screen and (max-width:900px) {
-    // margin-bottom: 10rem;
-    span {
-      font-size:7vmin;
-    }
-  }
-
   @media screen and (max-width:450px) {
-    // margin-bottom: 12rem;
+    margin-bottom: 12rem;
     span {
-      font-size:7vmin;
+      font-size:7.5vmin;
     }
   }
 
