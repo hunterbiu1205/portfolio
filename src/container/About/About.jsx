@@ -31,7 +31,7 @@ const About = () => {
                         </div>
 
                         <div className="header__contact">
-                            <a href={require("../../assets/Huatao_Dong.pdf")} download="GFG">
+                            <a href={require("../../assets/Huatao_Dong.pdf")} download="Huatao_Dong">
                                 <button className="button" type="button">GET MY RESUME</button>
                             </a>
                             <a href="mailto:hunterbiu1205@gmail.com">
