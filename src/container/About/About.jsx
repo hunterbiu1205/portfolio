@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
-import { urlFor, client } from '../../client';
 
 const About = () => {
 
@@ -68,10 +67,10 @@ const About = () => {
                         In 2018, I made the most important choice of my life and came to Australia to become a student at the University of Adelaide. Computer science is the study of computation, automation, and information. It is generally considered an academic field of study with a wide range of research, applications and employment directions. As the main technology of the third industrial revolution, it is still one of the core disciplines and has a bright future development, which is why I decided to study this major. Web development is an exciting career because it's always evolving and constantly changing. It has the opportunity for people to grow and interact with new tools and new skills. Maybe it's because I love design and the pursuit of perfection, I really enjoy working in web development and I want to turn that interest into my profession. As a junior developer, I want to enter this industry through website development to continuously enrich my experience and skills to participate in more development projects in the future.
                     </p>
                     <div className="cg_image">
-                        <img src={images.graduation1} />
-                        <img src={images.graduation2} />
-                        <img src={images.cg1} />
-                        <img src={images.cg2} />
+                        <img src={images.graduation1} alt=" " />
+                        <img src={images.graduation2} alt=" " />
+                        <img src={images.cg1} alt=" " />
+                        <img src={images.cg2} alt=" " />
                     </div>
                 </div>
 
