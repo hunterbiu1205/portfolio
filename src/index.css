@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --font-base: 'Avenir', cursive;
+  --font-base: 'inter', cursive;
 
   /* --primary-color: #edf2f8; */
   --secondary-color:rgb(52,76,68);
