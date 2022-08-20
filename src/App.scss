@@ -58,9 +58,11 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
+  font-family: 'inter', cursive;  
   color: var(--primary-color);
   text-transform: capitalize;
   padding-top: 2rem;
+  font
 
   span {
     color: var( --black-color);
@@ -77,6 +79,7 @@
 
 .head-text2 {
   font-size: 2.75rem;
+  font-family: 'inter', cursive;  
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
@@ -102,7 +105,7 @@
   text-align: left;
   color: var(--gray-color);
   line-height: 1.5;
-  font-family: 'Avenir', cursive;
+  font-family: 'inter', cursive;
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
@@ -114,7 +117,7 @@
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
-  font-family: 'Avenir', cursive;
+  font-family: 'inter', cursive;
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
