@@ -19,7 +19,7 @@
 
   //-------------------------------------------------
   .header__title {  
-    font-family: 'inter', cursive;  
+    font-family: 'Arial', cursive;  
     color:beige;
     text-shadow: 0 0 5px rgb(163, 162, 162),
     0 0 20px #fff,   
@@ -51,7 +51,7 @@
   
     p {
       font-size: 18px;
-      font-family: 'inter', cursive;
+      font-family: 'Arial', cursive;
       text-align: left;
       color: var(--lightGray-color);
     }
@@ -151,7 +151,7 @@
     p {
       padding: 1rem 2rem;
       color: var(--lightGray-color);
-      font-family: 'inter', cursive;
+      font-family: 'Arial', cursive;
       @media screen and (max-width: 450px) {
         font-size: small;
         padding: 1rem 1rem;
