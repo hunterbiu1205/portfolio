@@ -109,6 +109,18 @@ const Work = () => {
             </motion.div>
             <br />
             <br />
+
+            <h1 className="head-text2">
+                my video and Canva document
+                <iframe src="https://player.vimeo.com/video/753215369?h=7ab20d53d0" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </h1>
+
+            <h1 className="head-text2">
+                <a href="https://www.docdroid.net/6jYRHKP/workplace-diversity-pdf"> Click to view Canva Document</a>
+            </h1>
+            <br></br>
+            <br></br>
+            <br></br>
             <h1 className="head-text2">
                 " I Know That <span>Good Development</span> <br />means <span>Good Business</span> "
             </h1>
